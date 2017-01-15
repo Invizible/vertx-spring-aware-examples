@@ -9,13 +9,13 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class SpringVertxApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringVertxApplication.class, args);
-	}
+  public static void main(String[] args) {
+    SpringApplication.run(SpringVertxApplication.class, args);
+  }
 
-	@Bean
+  @Bean
   public Vertx vertx() {
-	  return Vertx.vertx();
+    return Vertx.vertx();
   }
 
   @Bean
