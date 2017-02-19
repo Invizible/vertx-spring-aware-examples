@@ -1,4 +1,4 @@
-package com.github.invizible.vertxspringaware.examples.clustered;
+package com.github.invizible.vertx.springaware.examples.simple;
 
 import com.github.invizible.vertx.springaware.Verticle;
 import io.vertx.core.AbstractVerticle;
@@ -6,7 +6,7 @@ import io.vertx.core.http.HttpServer;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @Verticle
-public class ServerVerticle extends AbstractVerticle {
+public class SimpleVerticle extends AbstractVerticle {
 
   @Autowired
   private TestService testService;
@@ -15,9 +15,7 @@ public class ServerVerticle extends AbstractVerticle {
   public void start() throws Exception {
     HttpServer httpServer = vertx.createHttpServer()
       .requestHandler(request -> {
-        testService.getBlockingMessage(result -> {
-          request.response().end(result);
-        });
+        request.response().end(testService.getMessage());
       })
       .listen(8080);
   }

@@ -1,4 +1,4 @@
-package com.github.invizible.vertxspringaware.examples.clustered;
+package com.github.invizible.vertx.springaware.examples.clustered;
 
 import com.github.invizible.vertx.springaware.ClusteredVertxConfiguration;
 import io.vertx.core.DeploymentOptions;

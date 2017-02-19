@@ -1,4 +1,4 @@
-package com.github.invizible.vertxspringaware.examples.simple;
+package com.github.invizible.vertx.springaware.examples.simple;
 
 import com.github.invizible.vertx.springaware.VertxConfiguration;
 import org.springframework.boot.SpringApplication;

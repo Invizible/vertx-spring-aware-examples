@@ -1,4 +1,4 @@
-package com.github.invizible.vertxspringaware.examples;
+package com.github.invizible.vertx.springaware.examples;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

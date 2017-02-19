@@ -1,4 +1,4 @@
-package com.github.invizible.vertxspringaware.examples.simple;
+package com.github.invizible.vertx.springaware.examples.simple;
 
 import org.springframework.stereotype.Service;
 
