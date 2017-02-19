@@ -1,6 +1,6 @@
-package com.example;
+package com.github.invizible.vertxspringaware.examples.clustered;
 
-import com.github.invizible.Verticle;
+import com.github.invizible.vertx.springaware.Verticle;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.DeploymentOptions;
 import io.vertx.core.http.HttpServer;
@@ -22,7 +22,7 @@ public class ServerVerticleWithConfiguration extends AbstractVerticle {
   @Override
   public void start() throws Exception {
     HttpServer httpServer = vertx.createHttpServer()
-      .requestHandler(request -> request.response().end(config().getString("author")))
+      .requestHandler(request -> request.response().end(config().toString()))
       .listen(8081);
   }
 }
